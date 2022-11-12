@@ -3,7 +3,7 @@ local figure = {}
 function figure.doanimation(anim, figure)
 	local animation = Instance.new("Animation")
 	animation.AnimationId = anim
-	local animationl = model:WaitForChild("Humanoid"):LoadAnimation(animation)
+	local animationl = figure:WaitForChild("Humanoid"):LoadAnimation(animation)
 	animationl:Play()
 end
 
@@ -15,5 +15,6 @@ function figure.spawn()
 	figure.doanimation("rbxassetid://8369184411", model)
 	model:Destroy()
 end
+
 
 return figure
