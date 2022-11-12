@@ -3,7 +3,7 @@ local figure = {}
 function figure.doanimation(anim, figure)
 	local animation = Instance.new("Animation")
 	animation.AnimationId = anim
-	local animationl = model.Humanoid:LoadAnimation(animation)
+	local animationl = model:WaitForChild("Humanoid"):LoadAnimation(animation)
 	animationl:Play()
 end
 
