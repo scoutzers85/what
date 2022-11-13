@@ -13,6 +13,7 @@ function figure.spawn()
 	model.Parent = workspace
 	model:PivotTo(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame)
 	figure.doanimation("rbxassetid://8369184411", model)
+	wait(4)
 	model:Destroy()
 end
 
